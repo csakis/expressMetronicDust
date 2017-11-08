@@ -1,0 +1,14 @@
+mixin myPortlet(options)
+
+  .portlet.bordered(class= options.class)
+    .portlet-title
+      .caption
+        span= options.title
+      .tools
+        a.collapse
+        a.fullscreen
+        a.remove
+    .portlet-body
+      block
+
+

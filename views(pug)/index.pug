@@ -1,0 +1,46 @@
+extends partials/layout
+block content
+  if title
+    h1= title
+  else
+    h1 Template page
+  block page_level_stylesheets
+    link(rel="stylesheet",type="text/css",href="css/sortable.css")
+  include mixins/portlet.pug
+  #sortable.row
+    .col-sm-4
+      -options.title = "csaba"
+
+
+      +myPortlet(options)
+        p This is some stupid text .col-sm-4.sortable.column
+    .col-sm-4
+      -options.title = "Miguel"
+
+      +myPortlet(options)
+        p This is some stupid text .col-sm-4.sortable.column
+    .col-sm-4
+      -options.class= "blue-hoki box"
+      -options.title="New portlet"
+      +myPortlet(options)
+        p This is some stupid text
+
+  block page_level_plugins
+    script(src='js/Sortable.min.js', type='text/javascript')
+  block page_level_scripts
+    script(type="text/javascript").
+        var el = document.getElementById('sortable');
+        var sortable = new Sortable(el, {
+          handle:".portlet-title",
+          ghostClass: "sortable-ghost",  // Class name for the drop placeholder
+          chosenClass: "sortable-chosen",  // Class name for the chosen item
+          dragClass: "sortable-drag",  // Class name for the dragging item
+        });
+
+
+
+
+
+
+
+

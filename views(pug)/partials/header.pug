@@ -1,0 +1,16 @@
+.page-header.navbar.navbar-fixed-top
+  .page-header-inner
+    .page-logo
+      a(href="index.html")
+        img.logo-default(src="assets/layouts/layout/img/logo.png")
+      .menu-toggler.sidebar-toggler
+        span
+    a.menu-toggler.responsive-toggler(data-toggle="collapse" data-target=".navbar-collapse")
+      span
+
+    // BEGIN TOP NAVIGATION MENU
+    .top-menu
+      ul.nav.navbar-nav.pull-right
+        li.dropdown.dropdown-extended.dropdown-notification#header_notification_bar
+          a.dropdown-toggle(data-toggle="dropdown" data-hover="dropdown" data-close-other="true")
+            i.icon-bell

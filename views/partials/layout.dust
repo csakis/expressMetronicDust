@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    if title
+      title= title
+    else
+      title Template page
+    include head.dust
+  body.page-header-fixed.page-sidebar-closed-hide-logo.page-content-white.page-md
+    .page-wrapper
+      include header.dust
+      .page-container
+        .page-content-wrapper
+          .page-content
+            block content
+    include footer.dust
+
