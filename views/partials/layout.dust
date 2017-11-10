@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
-    {!{>"partials/head"/}!}
-<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md">
-<div class="page-wrapper">
-    {!{>"partials/navbar"/}!}
-    <div class="page-container">
-        <div class="page-content-wrapper">
-            <div class="page-content">
+    {>"partials/head"/}
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md">
+    <div class="page-wrapper">
+        {>"partials/navbar"/}
+        <div class="page-container">
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    {+content /}
+                </div>
             </div>
         </div>
     </div>
-</div>
-    {!{>"partials/footer"/}!}
-</body>
+        {>"partials/footer"/}
+    </body>
 </html>

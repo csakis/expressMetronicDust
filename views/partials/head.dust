@@ -23,9 +23,7 @@
           type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
     {!BEGIN PAGE LEVEL PLUGINS!}
-    {+pageLevelStylesheets /}
-
-    {!{/pageLevelStylesheets}!}
+    {+pageLevelStyleSheets /}
     {! END PAGE LEVEL PLUGINS!}
     <!-- BEGIN THEME GLOBAL STYLES -->
     <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css"/>

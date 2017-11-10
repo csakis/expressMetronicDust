@@ -15,8 +15,6 @@ var app = express();
 
 var options = {
   cache: false,
-  arguments: {"debug": true}
-
 };
 
 // view engine setup
