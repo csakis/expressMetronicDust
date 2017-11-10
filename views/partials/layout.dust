@@ -1,17 +1,16 @@
-doctype html
-html
-  head
-    if title
-      title= title
-    else
-      title Template page
-    include head.dust
-  body.page-header-fixed.page-sidebar-closed-hide-logo.page-content-white.page-md
-    .page-wrapper
-      include header.dust
-      .page-container
-        .page-content-wrapper
-          .page-content
-            block content
-    include footer.dust
-
+<!doctype html>
+<html lang="en">
+    {!{>"partials/head"/}!}
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md">
+<div class="page-wrapper">
+    {!{>"partials/navbar"/}!}
+    <div class="page-container">
+        <div class="page-content-wrapper">
+            <div class="page-content">
+            </div>
+        </div>
+    </div>
+</div>
+    {!{>"partials/footer"/}!}
+</body>
+</html>
